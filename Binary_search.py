@@ -1,6 +1,6 @@
 def binarySearch(list,target):
     left = 0
-    right = len(left) - 1
+    right = len(list) - 1
     while left <= right:
         mid = (right+left) // 2
         if list[mid] == target:
