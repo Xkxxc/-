@@ -1,5 +1,5 @@
 #用二分查找寻找相同值的最左边
-def binarysearchleftmost(list,target):
+def binarysearchleftmost1(list,target):
     i = 0
     j = len(list) - 1
     candidate = -1
@@ -14,4 +14,15 @@ def binarysearchleftmost(list,target):
             j = m - 1
     return candidate
 
+#返回更有用的值
+def binarysearchleftmost2(list,target):
+    i = 0
+    j = len(list) - 1
+    while i <= j:
+        m = (i + j) >> 1
+        if target <= list[m]:
+            j = m - 1
+        else:
+            i = m + 1
+    return i
 
