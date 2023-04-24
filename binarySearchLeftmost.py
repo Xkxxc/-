@@ -14,7 +14,7 @@ def binarysearchleftmost1(list,target):
             j = m - 1
     return candidate
 
-#返回更有用的值
+#返回更有用的值,例如[1,3,4,5,6],target = 2-->返回索引1,与上面对比,上面没有找到就返回-1.
 def binarysearchleftmost2(list,target):
     i = 0
     j = len(list) - 1
@@ -25,4 +25,5 @@ def binarysearchleftmost2(list,target):
         else:
             i = m + 1
     return i
+
 
