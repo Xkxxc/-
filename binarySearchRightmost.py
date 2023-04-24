@@ -14,15 +14,14 @@ def binarysearchReftmost1(list,target):
             i = m + 1
     return candidate
 
-#返回更有用的值
+#返回更有用的值,例如[1,3,4,5,5,6],target = 5-->返回索引4,与上面对比,上面没有找到就返回-1.
 def binarysearchReftmost2(list,target):
     i = 0
     j = len(list) - 1
     while i <= j:
         m = (i + j) >> 1
-        if target <= list[m]:
+        if target < list[m]:
             j = m - 1
         else:
             i = m + 1
     return j
-
