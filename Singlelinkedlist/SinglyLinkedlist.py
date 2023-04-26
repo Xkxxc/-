@@ -89,8 +89,8 @@ class LinkedList:
         node = self.find_node(index)
         node.val = val
 
-    # 链表遍历改值操作---把链表原先的值,改成其他值,例如1->2->3  将2改成4   缺点:如果有相同的值,就改较前一个
-    def change_value(self,old_val,new_val):
+    # 链表遍历改值操作---把链表原先的值,改成其他值,例如1->2->3  将2改成4   缺点:如果有相同的值,就改较前一个---后续进行优化！
+    def change_value(self,old_val,new_val)
         curr = self.head
         while curr:
             if curr.val == old_val:
