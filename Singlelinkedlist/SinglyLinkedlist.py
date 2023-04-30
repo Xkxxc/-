@@ -87,6 +87,8 @@ class LinkedList:
     # 在指定位置改变值
     def change_index_value(self,index,val):
         node = self.find_node(index)
+        if node == None:
+            raise IndexError(index)
         node.val = val
 
     # 链表遍历改值操作---把链表原先的值,改成其他值,例如1->2->3  将2改成4   缺点:如果有相同的值,就改较前一个---后续进行优化！
