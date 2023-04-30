@@ -69,7 +69,7 @@ class LinkedList:
 
 
 
-# 主函数
+# 主函数--测试用法
 if __name__ == '__main__':
     list = LinkedList()
     list.add_list(1)
